@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img&gif/images.png" type="image/png">
+</head>
+<body>
+
+    <!-- Tela de início -->
+    <section id="tela-inicial">
+        <button id="buttonfirst">
+            <img class="heart"  src="https://th.bing.com/th/id/R.ca97bde328433c2497b154afdee5f8d7?rik=d6ydpNI9m7xYQQ&riu=http%3a%2f%2fclipart-library.com%2fimg%2f1447892.gif&ehk=rixPyo6UdpYRpT3%2b8%2fQmteFniDTuhBqbmj8QLa4ldyA%3d&risl=&pid=ImgRaw&r=0" alt="hearth">
+            <h1>Clique aqui</h1></button>
+    </section>
+
+    <!-- Conteúdo principal -->
+
+<section id="bordahome">
+    <div id="music">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-audio-lines-icon lucide-audio-lines"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></svg>
+        <h5>Nossa Playlist!💖</h5>
+        <audio controls id="music1" autoplay>
+                <source src="./musics/ALIANÇA - TRIBALISTA.MP3" type="audio/mpeg" id="player"> 
+                 
+            </audio>
+    </div>
+
+<br>
+
+    <div id="texthome1">
+        <p> João Victor Batista um excelente 2026, marcado por conquistas, aprendizado e fortalecimento das lutas que fazem parte da sua trajetória. Que este novo ano traga reconhecimento, oportunidades e avanços pessoais e profissionais, especialmente nos espaços que exigem consciência social, resistência e participação ativa.
+        <p>Que seus ideais enquanto militante do Partido dos Trabalhadores (PT), o compromisso com a justiça social, o feminismo e a defesa dos direitos reprodutivos continuem orientando suas ações e contribuindo para uma sociedade mais igualitária. Que as políticas de inclusão e ações afirmativas sigam ampliando oportunidades e garantindo o acesso a direitos. Um ano de progresso, voz ativa e realizações. </p>
+        </p>
+    </div>
+<br>
+    <div id="videohome1">
+        <img src="./img&gif/JOAO.jpeg"></img>
+    </div>
+
+<br>
+
+    <div id="texthome2">
+        <p>
+            Inclusive, muita gente diz que o João Victor Batista até se parece com o Jones Manoel — seja no jeito de falar, na postura ou até na aparência. Essa semelhança acaba reforçando ainda mais a identificação dele com as ideias e o estilo do comunicador, deixando claro o quanto essa referência é forte na forma como ele se expressa e se posiciona.
+        </p>
+    </div>
+
+<br>
+
+<section class="float">
+    <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#a982b0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chess-queen-icon lucide-chess-queen"><path d="M4 20a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="m12.474 5.943 1.567 5.34a1 1 0 0 0 1.75.328l2.616-3.402"/><path d="m20 9-3 9"/><path d="m5.594 8.209 2.615 3.403a1 1 0 0 0 1.75-.329l1.567-5.34"/><path d="M7 18 4 9"/><circle cx="12" cy="4" r="2"/><circle cx="20" cy="7" r="2"/><circle cx="4" cy="7" r="2"/></svg>
+    </a>
+</section>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const telaInicial = document.getElementById("tela-inicial");
+        const bordahome = document.getElementById("bordahome");
+
+        telaInicial.addEventListener("click", () => {
+            telaInicial.style.opacity = "0";
+
+            setTimeout(() => {
+                telaInicial.style.display = "none";
+                bordahome.style.display = "block";
+            }, 800);
+        }); 
+        videohome1.controls = false;
+        music1.controls = false;
+
+    </script>
+</section>
+</body>
+</html>
